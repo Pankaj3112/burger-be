@@ -16,6 +16,7 @@ dotenv.config({
 });
 
 // Using middlewares
+console.log(process.env.SECRET_Id);
 
 app.use(
   session({

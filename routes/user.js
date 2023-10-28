@@ -20,7 +20,7 @@ router.get(
 router.get(
   "/login",
   passport.authenticate("google", {
-    successRedirect: "https://btech-burger-wala-sigma.vercel.app",
+    successRedirect: "https://btech-burger-wala-sigma.vercel.app/",
   })
 );
 
