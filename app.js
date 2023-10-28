@@ -22,8 +22,8 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: true,
-      sameSite: "none",
+    //   secure: true,
+    //   sameSite: "none",
     },
   })
 );
@@ -41,7 +41,7 @@ app.use(passport.session());
 app.use(
   cors({
     credentials: true,
-    origin: "https://btech-burger-wala-sigma.vercel.app",
+    origin: ["https://btech-burger-wala-sigma.vercel.app", "http://localhost:3000"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );

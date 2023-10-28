@@ -21,6 +21,7 @@ router.get(
   "/login",
   passport.authenticate("google", {
     successRedirect: "https://btech-burger-wala-sigma.vercel.app/",
+	// successRedirect: "http://localhost:3000/",
   })
 );
 
