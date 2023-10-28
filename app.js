@@ -21,9 +21,7 @@ app.use(
     secret: process.env.SECRET_Id,
     resave: false,
     saveUninitialized: false,
-    cookie: {
-      domain: "btech-burger-wala-sigma.vercel.app",
-    },
+    cookie: {},
   })
 );
 
@@ -40,7 +38,7 @@ app.use(
   cors({
     credentials: true,
     origin: [
-      "https://btech-burger-wala-sigma.vercel.app",
+      "https://btech-burger-olhj.onrender.com",
       "http://localhost:3000",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
