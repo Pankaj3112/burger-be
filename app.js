@@ -21,7 +21,7 @@ app.use(
     secret: process.env.SECRET_Id,
     resave: false,
     saveUninitialized: false,
-    cookie: {},
+    cookie: {domain: 'onrender.com'},
   })
 );
 
