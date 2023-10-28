@@ -21,7 +21,7 @@ app.use(
     secret: process.env.SECRET_Id,
     resave: false,
     saveUninitialized: false,
-    cookie: {domain: 'onrender.com'},
+    cookie: {domain: '.pankajbeniwal.tech'},
   })
 );
 
@@ -38,7 +38,7 @@ app.use(
   cors({
     credentials: true,
     origin: [
-      "https://btech-burger-olhj.onrender.com",
+      "https://fe.pankajbeniwal.tech",
       "http://localhost:3000",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
