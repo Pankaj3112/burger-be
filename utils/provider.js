@@ -41,7 +41,6 @@ export const connectPassport = () => {
 
   passport.deserializeUser(async (id, done) => {
 	console.log("inside Deserialize function");
-    console.log(id);
     const user = await User.findById(id);
     console.log(user);
     done(null, user);

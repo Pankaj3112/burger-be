@@ -16,8 +16,6 @@ dotenv.config({
 });
 
 // Using middlewares
-console.log(process.env.SECRET_Id);
-
 app.use(
   session({
     secret: process.env.SECRET_Id,
@@ -29,6 +27,7 @@ app.use(
     },
   })
 );
+
 
 app.use(cookieParser());
 app.use(express.json());
