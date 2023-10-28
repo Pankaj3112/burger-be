@@ -34,12 +34,13 @@ export const connectPassport = () => {
   );
 
   passport.serializeUser((user, done) => {
+	console.log("inside serialize function");
     console.log(user.id);
     done(null, user.id);
   });
 
   passport.deserializeUser(async (id, done) => {
-
+	console.log("inside Deserialize function");
     console.log(id);
     const user = await User.findById(id);
     console.log(user);
