@@ -22,12 +22,10 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-    //   secure: true,
-    //   sameSite: "none",
+      domain: "btech-burger-wala-sigma.vercel.app",
     },
   })
 );
-
 
 app.use(cookieParser());
 app.use(express.json());
@@ -41,7 +39,10 @@ app.use(passport.session());
 app.use(
   cors({
     credentials: true,
-    origin: ["https://btech-burger-wala-sigma.vercel.app", "http://localhost:3000"],
+    origin: [
+      "https://btech-burger-wala-sigma.vercel.app",
+      "http://localhost:3000",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
